@@ -139,6 +139,7 @@
 
   .native-section__content h1 {
     font-size: 40px;
+    margin-bottom: 16px;
   }
 
   .native-section__content p {

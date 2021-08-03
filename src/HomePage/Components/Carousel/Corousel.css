@@ -64,7 +64,6 @@
   flex: none;
   width: 160px;
   height: 152px;
-
   color: var(--text-dark);
   display: flex;
   flex-direction: column;
@@ -153,6 +152,10 @@
 
   .carousel .hr-underline {
     margin-bottom: 64px;
+  }
+
+  .carousel .cards-container {
+    column-gap: 30px;
   }
 
   .carousel__content {

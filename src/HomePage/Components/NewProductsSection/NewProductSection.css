@@ -1,5 +1,6 @@
 .new-product-section {
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .new-product-section .wrapper {
