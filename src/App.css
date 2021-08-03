@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+/* import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"); /* Mulish */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap"); /* Asap */
+
+/* default styles */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Mulish", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  box-sizing: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button {
+  cursor: pointer;
+}
+
+/* variables */
+:root {
+  /* gradient */
+  --gradient-dark: linear-gradient(#00b59c, #9cffac);
+  --gradient-light: linear-gradient(#c3ffe8, #effff4);
+
+  /*colors */
+  --light: hsl(0, 0%, 100%);
+  --primary: hsl(147, 69%, 43%);
+  --primary-dark: hsl(147, 100%, 23%);
+
+  /* text colors */
+  --text-primary: hsl(147, 69%, 43%);
+  --text-light: hsl(0, 0%, 100%);
+  --text-lightGray: hsl(210, 9%, 31%);
+  --text-dark: hsl(20, 43%, 1%);
+
+  /* gray colors */
+  --gray-1: hsl(0, 0%, 100%);
+  --gray-3: hsl(210, 17%, 98%);
+  --gray-4: hsl(208, 11%, 71%);
+  --gray-5: hsl(210, 9%, 31%);
+  --gray-9: hsl(218, 11%, 15%);
+
+  /* bg colors */
+  --vl-blue: hsl(230, 37%, 97%);
+}
+
+/* component classes */
+.btn {
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-weight: 600;
+  font-family: Asap;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn--bg {
+  padding: 16px 40px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 125%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn--sm {
+  width: 8.75rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 111%;
+}
+
+.btn--light {
+  background-color: var(--light);
+  color: var(--text-primary);
+}
+
+.btn--dark {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.btn--toggle {
+  border: 0.125rem solid var(--primary);
+  color: var(--text-primary);
+}
+
+.hr-underline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+  height: 2px;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1250px) {
+  .hr-underline {
+    width: 50px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* helper classes */
+.wrapper {
+  position: relative;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none !important;
 }
