@@ -1,6 +1,6 @@
 import React from "react";
 
-import cardImg from "../../../Assets/png/cardIMG.png";
+import cardImg from "../../../assets/png/cardIMG.png";
 import "./ResourcesSection.css";
 export default function ResourcesSection() {
   return (

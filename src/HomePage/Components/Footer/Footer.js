@@ -1,9 +1,9 @@
 import React from "react";
 
-import logo from "../../../Assets/logo-light.svg";
-import ssl from "../../../Assets/png/SSL_certificate 1.png";
-import iso from "../../../Assets/png/iso_27001-150x150 1.png";
-import hippa from "../../../Assets/png/hipaa-artivatic 1.png";
+import logo from "../../../assets/logo-light.svg";
+import ssl from "../../../assets/png/SSL_certificate 1.png";
+import iso from "../../../assets/png/iso_27001-150x150 1.png";
+import hippa from "../../../assets/png/hipaa-artivatic 1.png";
 import "./Footer.css";
 export default function Footer() {
   return (

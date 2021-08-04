@@ -1,7 +1,7 @@
 import React from "react";
 
-import nativeImgMob from "../../../Assets/png/native-section.png";
-import nativeImgDesk from "../../../Assets/png/native-section-desk.png";
+import nativeImgMob from "../../../assets/png/native-section.png";
+import nativeImgDesk from "../../../assets/png/native-section-desk.png";
 import "./TrustSection.css";
 export default function TrustSection() {
   return (

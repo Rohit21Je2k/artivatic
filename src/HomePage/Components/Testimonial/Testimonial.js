@@ -1,7 +1,7 @@
 import React from "react";
 
-import authImg from "../../../Assets/png/testimonial/person.png";
-import greenGrid from "../../../Assets/vector/green-grid.svg";
+import authImg from "../../../assets/png/testimonial/person.png";
+import greenGrid from "../../../assets/vector/green-grid.svg";
 import "./Testimonial.css";
 export default function Testimonial() {
   return (

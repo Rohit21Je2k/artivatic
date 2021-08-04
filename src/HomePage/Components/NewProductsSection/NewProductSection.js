@@ -1,6 +1,6 @@
 import React from "react";
 
-import blackDot from "../../../Assets/vector/blackDot.svg";
+import blackDot from "../../../assets/vector/blackDot.svg";
 import "./NewProductSection.css";
 export default function NewProductSection() {
   return (

@@ -16,6 +16,8 @@ import ResourcesSection from "../Components/ResourcesSection/ResourcesSection.js
 import NewsLetterSection from "../Components/NewsLetterSection/NewsLetterSection.js";
 import Footer from "../Components/Footer/Footer.js";
 
+import Carousel123 from "../../components/carousel/carousel.js";
+
 export default function Home() {
   return (
     <div id="home">
@@ -34,6 +36,7 @@ export default function Home() {
       <ResourcesSection />
       <NewsLetterSection />
       <Footer />
+      <Carousel123 />
     </div>
   );
 }

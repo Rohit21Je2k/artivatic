@@ -1,0 +1,63 @@
+.test {
+  background-color: var(--primary);
+  padding: 100px 30px;
+  border-top: 10px solid black;
+}
+
+.carousel1 {
+  position: relative;
+}
+
+.carousel__container {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  scroll-behavior: smooth;
+}
+
+.carousel__container > * {
+  flex: none;
+  margin-right: 20px;
+}
+
+.carousel__control-prev,
+.carousel__control-next {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__control-prev {
+  left: -30px;
+  background-image: linear-gradient(to left, transparent, var(--primary) 50%);
+  justify-content: flex-start;
+}
+
+.carousel__control-next {
+  right: -30px;
+  background-image: linear-gradient(to right, transparent, var(--primary) 50%);
+  justify-content: flex-end;
+}
+
+.carousel__nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10.67px;
+}
+
+.carousel__nav-btn {
+  width: 5.33px;
+  height: 5.33px;
+  border-radius: 50%;
+  background-color: var(--gray-100);
+  opacity: 0.5;
+}
+
+.carousel__nav-btn.select {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}

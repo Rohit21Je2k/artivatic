@@ -1,6 +1,6 @@
 import React from "react";
 
-import insuranceCloudImg from "../../../Assets/png/insurance cloud-mob.png";
+import insuranceCloudImg from "../../../assets/png/insurance cloud-mob.png";
 import "./InsuranceCloudSection.css";
 export default function InsuranceCloudSection() {
   return (

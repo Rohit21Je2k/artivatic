@@ -1,10 +1,10 @@
 import React from "react";
 
-import award1 from "../../../Assets/png/awards/award-1.png";
-import award2 from "../../../Assets/png/awards/award-2.png";
-import award3 from "../../../Assets/png/awards/award-3.png";
-import award4 from "../../../Assets/png/awards/award-4.png";
-import award5 from "../../../Assets/png/awards/award-5.png";
+import award1 from "../../../assets/png/awards/award-1.png";
+import award2 from "../../../assets/png/awards/award-2.png";
+import award3 from "../../../assets/png/awards/award-3.png";
+import award4 from "../../../assets/png/awards/award-4.png";
+import award5 from "../../../assets/png/awards/award-5.png";
 
 import "./AwardSection.css";
 export default function AwardSection() {

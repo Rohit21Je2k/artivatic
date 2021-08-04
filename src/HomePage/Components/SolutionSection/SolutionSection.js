@@ -1,6 +1,6 @@
 import React from "react";
 
-import cardImg from "../../../Assets/png/carousel-card-img.png";
+import cardImg from "../../../assets/png/carousel-card-img.png";
 
 import "./SolutionSection.css";
 export default function SolutionSection() {

@@ -1,7 +1,7 @@
 import React from "react";
 
-import imgMob from "../../../Assets/png/about-section-png-mob.png";
-import imgDesk from "../../../Assets/png/about-section-png-desk.png";
+import imgMob from "../../../assets/png/about-section-png-mob.png";
+import imgDesk from "../../../assets/png/about-section-png-desk.png";
 import "./AboutSection.css";
 
 export default function AboutSection() {

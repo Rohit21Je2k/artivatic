@@ -100,7 +100,7 @@
   width: 16px;
   height: 16px;
   margin-bottom: 8px;
-  background-image: url("../../../Assets/vector/greyquotes.svg");
+  background-image: url("../../../assets/vector/greyquotes.svg");
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
@@ -126,11 +126,11 @@
 }
 
 .testimonial-section .container-nav .prev {
-  background-image: url("../../../Assets//vector/green-chevron-left.svg");
+  background-image: url("../../../assets//vector/green-chevron-left.svg");
 }
 
 .testimonial-section .container-nav .next {
-  background-image: url("../../../Assets//vector/green-chevron-right.svg");
+  background-image: url("../../../assets//vector/green-chevron-right.svg");
 }
 
 .testimonial-section .container-nav .dots {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import greenCircle from "../../../Assets/vector/green-circle.svg";
+import greenCircle from "../../../assets/vector/green-circle.svg";
 import "./FeatureSection.css";
 export default function FeatureSection() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
-import img from "../../../Assets/png/intro-section.png";
-// import bg from "../../../Assets/vector/intro-section-vector.svg";
+import img from "../../../assets/png/intro-section.png";
+// import bg from "../../../assets/vector/intro-section-vector.svg";
 import "./IntroSection.css";
 
 export default function IntoSection() {

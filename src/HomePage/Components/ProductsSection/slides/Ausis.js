@@ -1,7 +1,7 @@
 import React from "react";
 
-import coverImg from "../../../../Assets/png/ausis-cover-img.png";
-import cardImg from "../../../../Assets/png/carousel-card-img.png";
+import coverImg from "../../../../assets/png/ausis-cover-img.png";
+import cardImg from "../../../../assets/png/carousel-card-img.png";
 import "./Ausis.css";
 export default function Ausis() {
   return (

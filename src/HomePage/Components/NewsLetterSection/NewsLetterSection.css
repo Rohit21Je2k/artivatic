@@ -1,6 +1,6 @@
 .news-letter {
   padding: 50px 0;
-  background-image: url("../../../Assets/png/news-letter.png");
+  background-image: url("../../../assets/png/news-letter.png");
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -80,7 +80,7 @@
 .news-letter form .icon {
   width: 21px;
   height: 21px;
-  background-image: url("../../../Assets/vector/green-plane.svg");
+  background-image: url("../../../assets/vector/green-plane.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
