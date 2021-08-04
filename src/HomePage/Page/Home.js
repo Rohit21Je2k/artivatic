@@ -12,6 +12,9 @@ import SolutionSection from "../Components/SolutionSection/SolutionSection.js";
 import FeatureSection from "../Components/FeatureSection/FeatureSection.js";
 import TrustSection from "../Components/TrustSection/TrustSection.js";
 import Testimonial from "../Components/Testimonial/Testimonial.js";
+import ResourcesSection from "../Components/ResourcesSection/ResourcesSection.js";
+import NewsLetterSection from "../Components/NewsLetterSection/NewsLetterSection.js";
+import Footer from "../Components/Footer/Footer.js";
 
 export default function Home() {
   return (
@@ -28,6 +31,9 @@ export default function Home() {
       <FeatureSection />
       <TrustSection />
       <Testimonial />
+      <ResourcesSection />
+      <NewsLetterSection />
+      <Footer />
     </div>
   );
 }

@@ -105,7 +105,7 @@ button {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 700px) {
   .hr-underline {
     width: 50px;
   }
@@ -131,4 +131,24 @@ button {
 
 .none {
   display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
 }

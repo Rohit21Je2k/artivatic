@@ -1,0 +1,200 @@
+.resource-section {
+  padding: 50px 0;
+  background-color: rgba(34, 187, 102, 0.1);
+  overflow: hidden;
+}
+
+.resource-section .wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource-section .heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.resource-section .hr-underline {
+  background-color: var(--text-dark);
+  margin-bottom: 57px;
+}
+
+.resource-section .card {
+  max-width: 300px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.resource-section .card .card-img {
+  display: block;
+  width: 300px;
+  height: 175px;
+}
+
+.resource-section .card .text {
+  padding: 14px 16px 12px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+}
+
+.resource-section .card .tag {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.resource-section .card h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.resource-section .card .details {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  color: var(--text-lightGray);
+  margin-bottom: 16px;
+}
+
+.resource-section .card .date {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 30px;
+  color: va(--text-lightGray);
+}
+
+.resource-section .carousel {
+  padding: 0;
+  margin-bottom: 28px;
+  width: 100%;
+  max-width: 500px;
+  background-color: transparent;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.resource-section .carousel .card {
+  flex: none;
+  width: 160px;
+  margin-right: 16px;
+}
+
+.resource-section .carousel .card img {
+  display: block;
+  width: 100%;
+  height: 84px;
+}
+
+.resource-section .btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+
+@media screen and (min-width: 772px) {
+  .resource-section {
+    padding: 100px 0;
+  }
+
+  .resource-section .card {
+    display: flex;
+    max-width: 1100px;
+  }
+
+  .resource-section .heading {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .resource-section .hr-underline {
+    margin-bottom: 32px;
+  }
+
+  .resource-section .card {
+    margin-bottom: 40px;
+  }
+
+  .resource-section .card .img-container,
+  .resource-section .card .text {
+    flex-basis: 100%;
+  }
+
+  .resource-section .card .img-container {
+    order: 2;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+  }
+
+  .resource-section .card .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .resource-section .card .text {
+    border-radius: 8px 0 0 8px;
+    order: 1;
+    padding: 32px 40px;
+  }
+
+  .resource-section .card .tag {
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+
+  .resource-section .card h3 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  .resource-section .card .details {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  .resource-section .card .date {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .resource-section .carousel {
+    max-width: 1100px;
+  }
+
+  .resource-section .carousel .card {
+    display: block;
+    width: 270px;
+    height: 333px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .resource-section .carousel .card img {
+    width: 270px;
+    height: 141px;
+  }
+
+  .resource-section .carousel .card .text {
+    padding: 12px 24px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
