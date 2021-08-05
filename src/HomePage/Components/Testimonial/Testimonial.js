@@ -17,7 +17,7 @@ export default function Testimonial() {
         <div className="container">
           <img src={greenGrid} alt="green-grid" className="green-grid" />
           <div className="content">
-            <div className="card">
+            <div className="test-card">
               <img src={authImg} alt="auth-img" />
               <div className="auth-details">
                 <h5>Aklesh Singh</h5>

@@ -5,7 +5,7 @@ import AboutSection from "../Components/AboutSection/AboutSection.js";
 import AwardSection from "../Components/AwardSection/AwardSection.js";
 import InsuranceCloudSection from "../Components/InsuranceCloudSection/InsuranceCloudSection.js";
 import NativeSection from "../Components/NativeSection/NativeSection.js";
-import Carousel from "../Components/Carousel/Carousel.js";
+
 import NewProductSection from "../Components/NewProductsSection/NewProductSection.js";
 import ProductsSection from "../Components/ProductsSection/ProductsSection.js";
 import SolutionSection from "../Components/SolutionSection/SolutionSection.js";
@@ -16,7 +16,8 @@ import ResourcesSection from "../Components/ResourcesSection/ResourcesSection.js
 import NewsLetterSection from "../Components/NewsLetterSection/NewsLetterSection.js";
 import Footer from "../Components/Footer/Footer.js";
 
-import Carousel123 from "../../components/carousel/carousel.js";
+import Test from "../../components/useCarousel/test.js";
+import Section6 from "../Components/Section6/Section6.js";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       <AwardSection />
       <InsuranceCloudSection />
       <NativeSection />
-      <Carousel />
+      <Section6 />
       <NewProductSection />
       <ProductsSection />
       <SolutionSection />
@@ -36,7 +37,7 @@ export default function Home() {
       <ResourcesSection />
       <NewsLetterSection />
       <Footer />
-      <Carousel123 />
+      <Test />
     </div>
   );
 }

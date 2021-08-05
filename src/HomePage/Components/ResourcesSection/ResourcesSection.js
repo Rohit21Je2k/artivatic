@@ -1,6 +1,8 @@
 import React from "react";
 
 import cardImg from "../../../assets/png/cardIMG.png";
+import Card from "../../../components/card/card";
+import Carousel123 from "../../../components/carousel/carousel";
 import "./ResourcesSection.css";
 export default function ResourcesSection() {
   return (
@@ -8,9 +10,9 @@ export default function ResourcesSection() {
       <div className="wrapper">
         <h1 className="heading">Resources that help you grow</h1>
         <hr className="hr-underline" />
-        <div className="card">
+        <div className="main-card">
           <div className="img-container">
-            <img src={cardImg} alt="card-img" className="card-img" />
+            <img src={cardImg} alt="card-img" className="main-card-img" />
           </div>
           <div className="text">
             <p className="tag">UPCOMING EVENT</p>
@@ -24,43 +26,50 @@ export default function ResourcesSection() {
           </div>
         </div>
 
-        <div className="carousel">
-          <div className="card">
-            <img src={cardImg} alt="card-img" />
-            <div className="text">
-              <span>Case Study</span>
-              <h5>Role of Telehealth During COVID-19</h5>
-              <button>View all case studies</button>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={cardImg} alt="card-img" />
-            <div className="text">
-              <span>Blog</span>
-              <h5>Role of Telehealth During COVID-19</h5>
-              <button>View all case studies</button>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={cardImg} alt="card-img" />
-            <div className="text">
-              <span>Resources</span>
-              <h5>Role of Telehealth During COVID-19</h5>
-              <button>View all case studies</button>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={cardImg} alt="card-img" />
-            <div className="text">
-              <span>Product video</span>
-              <h5>Role of Telehealth During COVID-19</h5>
-              <button>View all case studies</button>
-            </div>
-          </div>
-        </div>
+        <Carousel123 fade="primary-vl" navColor="#22b966" dotNav={false}>
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
+            ancLink="/"
+            btnText="View all case studies"
+          />
+        </Carousel123>
 
         <button className="btn btn--bg btn--dark">View all Resources</button>
       </div>

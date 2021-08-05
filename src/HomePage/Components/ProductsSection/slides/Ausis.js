@@ -1,15 +1,20 @@
 import React from "react";
 
 import coverImg from "../../../../assets/png/ausis-cover-img.png";
-import cardImg from "../../../../assets/png/carousel-card-img.png";
+import Card from "../../../../components/card/card";
+import Carousel123 from "../../../../components/carousel/carousel";
 import "./Ausis.css";
 export default function Ausis() {
   return (
-    <div className="ausis product-slide">
+    <div className="product-slide">
       <div className="wrapper">
         <div className="container">
-          <img src={coverImg} alt="cover-img" className="cover-img"></img>
-          <div className="text">
+          <img
+            src={coverImg}
+            alt="cover-img"
+            className="product-slide__cover-img"
+          ></img>
+          <div className="product-slide__text">
             <h5>AUSIS for Life & Health Insurance</h5>
             <h3>
               AUSIS – Full-stack AI based Behavioural & Personalized Smart
@@ -24,54 +29,51 @@ export default function Ausis() {
             </p>
           </div>
         </div>
-        <button className="know-more-btn btn btn--dark">
+        <button className="product-slide__more-btn btn btn--dark">
           Get to know more
         </button>
-        <div className="related-btns">
+        <div className="product-slide__related-btns">
           <button className="btn">Medical Underwriting</button>
           <button className="btn">SMV Underwriting</button>
           <button className="btn">Financial Underwriting</button>
           <button className="btn">EME Underwriting</button>
         </div>
-        <div className="related-resources">
-          <h3>Resources related to the product</h3>
-          <div className="carousel">
-            <div className="card">
-              <img src={cardImg} alt="card-img" />
-              <div className="text">
-                <span>Case Study</span>
-                <h5>Role of Telehealth During COVID-19</h5>
-                <button>View all case studies</button>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={cardImg} alt="card-img" />
-              <div className="text">
-                <span>Blog</span>
-                <h5>Role of Telehealth During COVID-19</h5>
-                <button>View all case studies</button>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={cardImg} alt="card-img" />
-              <div className="text">
-                <span>Resources</span>
-                <h5>Role of Telehealth During COVID-19</h5>
-                <button>View all case studies</button>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={cardImg} alt="card-img" />
-              <div className="text">
-                <span>Product video</span>
-                <h5>Role of Telehealth During COVID-19</h5>
-                <button>View all case studies</button>
-              </div>
-            </div>
-          </div>
+        <div className="product-slide__related-resources">
+          <h3 className="product-slide__related-resources__title">
+            Resources related to the product
+          </h3>
+          <Carousel123 fade="primary-vl" navColor="#22b966" dotNav={false}>
+            <Card
+              tag="Case study"
+              title="Role of Telehealth During COVID-19"
+              ancLink="/"
+              btnText="View all case studies"
+            />
+            <Card
+              tag="Case study"
+              title="Role of Telehealth During COVID-19"
+              ancLink="/"
+              btnText="View all case studies"
+            />
+            <Card
+              tag="Case study"
+              title="Role of Telehealth During COVID-19"
+              ancLink="/"
+              btnText="View all case studies"
+            />
+            <Card
+              tag="Case study"
+              title="Role of Telehealth During COVID-19"
+              ancLink="/"
+              btnText="View all case studies"
+            />
+            <Card
+              tag="Case study"
+              title="Role of Telehealth During COVID-19"
+              ancLink="/"
+              btnText="View all case studies"
+            />
+          </Carousel123>
         </div>
       </div>
     </div>

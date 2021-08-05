@@ -5,7 +5,7 @@ import "./card.css";
 export default function Card(props) {
   const { tag, title, text, btnText } = props;
   return (
-    <div className="card1">
+    <div className="card">
       <img src={cardImg} alt="card-img" className="card__img" />
       <div className="card__info">
         {tag && <span className="card__tag">{tag}</span>}

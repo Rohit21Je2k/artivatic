@@ -2,13 +2,14 @@ import React from "react";
 
 import Card from "../../../components/card/card";
 import Carousel from "../../../components/carousel/carousel";
-
-import "./SolutionSection.css";
-export default function SolutionSection() {
+import "./section6.css";
+export default function Section6() {
   return (
     <section className="section-6">
       <div className="wrapper">
-        <h1 className="section-6__heading">Industy Solutions</h1>
+        <h1 className="section-6__heading">
+          Artivatic is products designed for all user-driven scenarios.
+        </h1>
 
         <hr className="hr-underline"></hr>
 

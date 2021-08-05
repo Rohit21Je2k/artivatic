@@ -1,17 +1,11 @@
-.test {
-  background-color: var(--primary);
-  padding: 100px 30px;
-  border-top: 10px solid black;
-}
-
-.carousel1 {
+.carousel {
   position: relative;
+  width: 100%;
 }
 
 .carousel__container {
   display: flex;
   overflow: hidden;
-  margin-bottom: 30px;
   scroll-behavior: smooth;
 }
 
@@ -32,18 +26,18 @@
 
 .carousel__control-prev {
   left: -30px;
-  background-image: linear-gradient(to left, transparent, var(--primary) 50%);
   justify-content: flex-start;
 }
 
 .carousel__control-next {
   right: -30px;
-  background-image: linear-gradient(to right, transparent, var(--primary) 50%);
   justify-content: flex-end;
 }
 
 .carousel__nav {
+  margin-top: 30px;
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 10.67px;
 }

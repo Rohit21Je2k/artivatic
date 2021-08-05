@@ -57,7 +57,7 @@ button {
   --gradient-light: linear-gradient(#c3ffe8, #effff4);
 
   /* text colors */
-  --text-primary: hsl(147, 69%, 43%);
+  --text-primary: #22b966;
   --text-light: hsl(0, 0%, 100%);
   --text-lightGray: hsl(210, 9%, 31%);
   --text-dark: hsl(20, 43%, 1%);
@@ -102,7 +102,7 @@ button {
 }
 
 .btn--light {
-  background-color: var(--light);
+  background-color: var(--gray-100);
   color: var(--text-primary);
 }
 
@@ -126,7 +126,6 @@ button {
   margin-right: auto;
   width: 30px;
   height: 2px;
-  opacity: 0.5;
   border-radius: 5px;
 }
 

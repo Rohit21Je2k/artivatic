@@ -18,8 +18,8 @@ export default function NewProductSection() {
           </h1>
         </div>
 
-        <div className="card mob">
-          <img src={blackDot} alt="card-img" />
+        <div className="grid-card mob">
+          <img src={blackDot} alt="grid-card-img" />
           <h2>ASPIRE</h2>
           <p>
             Our insurance, brokers, distribution partners find navigating the
@@ -28,8 +28,8 @@ export default function NewProductSection() {
           <button>Know more</button>
         </div>
 
-        <div className="card mob">
-          <img src={blackDot} alt="card-img" />
+        <div className="grid-card mob">
+          <img src={blackDot} alt="grid-card-img" />
           <h2>MIO</h2>
           <p>
             Our insurance, brokers, distribution partners find navigating the
@@ -38,8 +38,8 @@ export default function NewProductSection() {
           <button>Know more</button>
         </div>
 
-        <div className="card">
-          <img src={blackDot} alt="card-img" />
+        <div className="grid-card">
+          <img src={blackDot} alt="grid-card-img" />
           <h2>New Product</h2>
           <p>
             Our insurance, brokers, distribution partners find navigating the
@@ -48,8 +48,8 @@ export default function NewProductSection() {
           <button>Know more</button>
         </div>
 
-        <div className="card">
-          <img src={blackDot} alt="card-img" />
+        <div className="grid-card">
+          <img src={blackDot} alt="grid-card-img" />
           <h2>New Product</h2>
           <p>
             Our insurance, brokers, distribution partners find navigating the
@@ -58,8 +58,8 @@ export default function NewProductSection() {
           <button>Know more</button>
         </div>
 
-        <div className="card">
-          <img src={blackDot} alt="card-img" />
+        <div className="grid-card">
+          <img src={blackDot} alt="grid-card-img" />
           <h2>New Product</h2>
           <p>
             Our insurance, brokers, distribution partners find navigating the
