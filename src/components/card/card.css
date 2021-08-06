@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   width: 160px;
   background-color: var(--gray-100);
   border-radius: 5px;
@@ -79,7 +80,7 @@
   }
 
   .card__info {
-    min-height: 116px;
+    min-height: 141px;
     padding: 14px 24px;
   }
 
@@ -99,8 +100,43 @@
     line-height: 20px;
   }
 
+  /* card with type hover */
   .card.hover .card__text {
     display: none;
+  }
+
+  .card__hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/png/cardIMG.png");
+    background-size: cover;
+    background-position: center center;
+    padding: 24px;
+    transition: transform 500ms ease-in-out;
+  }
+
+  .card__hover__title {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--gray-100);
+  }
+
+  .card__hover__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-100);
+  }
+
+  .card:hover .card__hover {
+    transform: translate(0, -100%);
   }
 
   .card__btn {

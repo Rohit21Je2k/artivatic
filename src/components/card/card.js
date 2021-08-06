@@ -11,6 +11,12 @@ export default function Card(props) {
         {tag && <span className="card__tag">{tag}</span>}
         <h5 className="card__title">{title}</h5>
         <p className="card__text">{text}</p>
+        {type === "hover" && (
+          <div className="card__hover">
+            <h5 className="card__hover__title">{title}</h5>
+            <p className="card__hover__text">{text}</p>
+          </div>
+        )}
         {btnText && <button className="card__btn">{btnText}</button>}
       </div>
     </div>

@@ -1,5 +1,5 @@
 .navBanner {
-  display: none;
+  display: block;
   position: absolute;
   top: 110px;
   left: 50%;
@@ -9,10 +9,6 @@
   border-radius: 16px;
   background-color: var(--gray-100);
   padding: 40px 70px;
-}
-
-.navBanner.show {
-  display: block;
 }
 
 .navBanner__title {
