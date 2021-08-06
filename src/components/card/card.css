@@ -99,6 +99,10 @@
     line-height: 20px;
   }
 
+  .card.hover .card__text {
+    display: none;
+  }
+
   .card__btn {
     margin-top: 36px;
     font-size: 16px;

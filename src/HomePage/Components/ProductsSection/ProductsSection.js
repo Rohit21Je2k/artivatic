@@ -8,7 +8,7 @@ export default function ProductsSection() {
       <div className="wrapper">
         <h1 className="heading">Artivatic Products</h1>
         <button className="demo-btn btn btn--sm btn--dark">Get a demo</button>
-        <div className="nav">
+        <div className="product-section__nav">
           <button className="btn-nav btn btn--sm btn--toggle select">
             AUSIS
           </button>

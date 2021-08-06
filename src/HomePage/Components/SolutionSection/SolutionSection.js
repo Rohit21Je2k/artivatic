@@ -14,26 +14,32 @@ export default function SolutionSection() {
 
         <Carousel fade="primary" navColor="#fff" dotNav={true}>
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />
           <Card
+            type="hover"
             title="Role of Telehealth During COVID-19"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
           />

@@ -49,6 +49,15 @@
   color: #474a54;
 }
 
+.intro-section .btn {
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 16px;
+  border-radius: 6.4px;
+  height: 40px;
+}
+
 .intro-section__content .btn--dark {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
@@ -120,5 +129,6 @@
     border-radius: 0.5rem;
     font-size: 1rem;
     line-height: 125%;
+    height: 52px;
   }
 }

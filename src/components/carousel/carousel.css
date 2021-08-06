@@ -55,3 +55,9 @@
   height: 8px;
   opacity: 1;
 }
+
+@media screen and (min-width: 992px) {
+  .carousel__container > * {
+    margin-right: 30px;
+  }
+}

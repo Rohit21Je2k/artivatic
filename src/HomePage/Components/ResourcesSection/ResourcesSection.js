@@ -2,7 +2,7 @@ import React from "react";
 
 import cardImg from "../../../assets/png/cardIMG.png";
 import Card from "../../../components/card/card";
-import Carousel123 from "../../../components/carousel/carousel";
+import Carousel from "../../../components/carousel/carousel";
 import "./ResourcesSection.css";
 export default function ResourcesSection() {
   return (
@@ -26,50 +26,43 @@ export default function ResourcesSection() {
           </div>
         </div>
 
-        <Carousel123 fade="primary-vl" navColor="#22b966" dotNav={false}>
+        <Carousel
+          className="resource-section__carousel"
+          fade="primary-vl"
+          navColor="#22b966"
+          dotNav={false}
+        >
           <Card
             tag="Case study"
             title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
             ancLink="/"
             btnText="View all case studies"
           />
           <Card
             tag="Case study"
             title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
             ancLink="/"
             btnText="View all case studies"
           />
           <Card
             tag="Case study"
             title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
             ancLink="/"
             btnText="View all case studies"
           />
           <Card
             tag="Case study"
             title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
             ancLink="/"
             btnText="View all case studies"
           />
           <Card
             tag="Case study"
             title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
             ancLink="/"
             btnText="View all case studies"
           />
-          <Card
-            tag="Case study"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-            ancLink="/"
-            btnText="View all case studies"
-          />
-        </Carousel123>
+        </Carousel>
 
         <button className="btn btn--bg btn--dark">View all Resources</button>
       </div>

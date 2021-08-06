@@ -20,7 +20,7 @@
   width: 126px;
 }
 
-.product-section .nav {
+.product-section__nav {
   margin-top: 20px;
   margin-bottom: 16px;
   background-color: transparent;
@@ -76,7 +76,7 @@
     font-size: 18px;
   }
 
-  .product-section .nav {
+  .product-section__nav {
     margin: 0;
     order: 2;
   }

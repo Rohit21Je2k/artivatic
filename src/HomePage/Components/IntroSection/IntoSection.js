@@ -30,10 +30,10 @@ export default function IntoSection() {
             services as modular building blocks powered by best-in-class API
             gateway.
           </p>
-          <a href="/" className="btn btn--sm btn--dark">
+          <a href="/" className="btn btn--dark">
             Get a demo
           </a>
-          <a href="/" className="btn btn--sm btn--toggle">
+          <a href="/" className="btn btn--toggle">
             Request Pricing
           </a>
         </div>
