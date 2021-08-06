@@ -1,0 +1,70 @@
+.insurance-cloud-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.insurance-cloud-section .wrapper {
+  max-width: 360px;
+}
+
+.insurance-cloud-section .heading-1,
+.insurance-cloud-section .heading-2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.insurance-cloud-section .heading-1 {
+  margin-bottom: 10px;
+}
+
+.insurance-cloud-section .heading-2 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.insurance-cloud-section hr {
+  background-color: var(--primary);
+  margin-bottom: 48px;
+}
+
+.insurance-cloud-section .img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1260px) {
+  .insurance-cloud-section {
+    padding: 100px 0;
+  }
+
+  .insurance-cloud-section .wrapper {
+    max-width: 1260px;
+  }
+
+  .insurance-cloud-section .heading-1,
+  .insurance-cloud-section .heading-2 {
+    font-size: 40px;
+  }
+
+  .insurance-cloud-section .heading-1 {
+    margin-bottom: 24px;
+  }
+
+  .insurance-cloud-section .heading-2 {
+    margin-bottom: 40px;
+  }
+
+  .insurance-cloud-section .hr {
+    margin-bottom: 50px;
+  }
+
+  .insurance-cloud-section .btn {
+    width: 186px;
+    height: 52px;
+    font-size: 18px;
+  }
+}

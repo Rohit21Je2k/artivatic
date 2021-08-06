@@ -1,7 +1,7 @@
 import React from "react";
 
-import Card from "../../../components/Card/Card";
-import Carousel from "../../../components/Carousel/Carousel";
+import Card from "../../../components/card/card";
+import Carousel from "../../../components/carousel/carousel";
 import "./section6.css";
 export default function Section6() {
   return (

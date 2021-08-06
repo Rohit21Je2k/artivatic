@@ -1,7 +1,7 @@
 import React from "react";
 
 import greenDot from "../../assets/vector/green-circle.svg";
-import "./navBanner.css";
+import "./NavBanner.css";
 export default function NavBanner(props) {
   const { title, grid } = props;
   return (

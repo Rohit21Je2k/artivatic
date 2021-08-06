@@ -1,8 +1,8 @@
 import React from "react";
 
 import cardImg from "../../../assets/png/cardIMG.png";
-import Card from "../../../components/Card/Card";
-import Carousel from "../../../components/Carousel/Carousel";
+import Card from "../../../components/card/card";
+import Carousel from "../../../components/carousel/carousel";
 import "./ResourcesSection.css";
 export default function ResourcesSection() {
   return (

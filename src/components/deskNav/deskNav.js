@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import NavBanner from "../navBanner/navBanner";
-import "./deskNav.css";
+import NavBanner from "../NavBanner/NavBanner";
+import "./DeskNav.css";
 export default function DeskNav() {
   const [navNumber, setNavNumber] = useState(0);
   function handleClick(e) {
@@ -16,7 +16,13 @@ export default function DeskNav() {
   }
   return (
     <div className="nav__menu">
-      <button className="nav__link selected">Home</button>
+      <button
+        className="nav__link selected"
+        onClick={handleClick}
+        data-number="0"
+      >
+        Home
+      </button>
       <button className="nav__link" onClick={handleClick} data-number="1">
         Products
       </button>

@@ -60,4 +60,9 @@
   .carousel__container > * {
     margin-right: 30px;
   }
+
+  .carousel__control-prev,
+  .carousel__control-next {
+    width: 120px;
+  }
 }

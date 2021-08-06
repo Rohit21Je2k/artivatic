@@ -1,6 +1,6 @@
 import React from "react";
 
-import DeskNav from "../../../components/deskNav/deskNav";
+import DeskNav from "../../../components/DeskNav/DeskNav";
 import "./Navbar.css";
 
 export default function Navbar() {

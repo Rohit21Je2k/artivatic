@@ -1,0 +1,138 @@
+.news-letter {
+  padding: 50px 0;
+  background-image: url("../../../assets/png/news-letter.png");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.news-letter .wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.news-letter .heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: white;
+  margin-bottom: 16px;
+  max-width: 320px;
+}
+
+.news-letter .hr-underline {
+  background-color: white;
+  margin-bottom: 24px;
+}
+
+.news-letter .btn--dark {
+  background-color: white;
+  color: var(--text-dark);
+  margin-right: 16px;
+}
+
+.news-letter .btn--toggle {
+  border-color: white;
+  color: white;
+
+  background-color: transparent;
+}
+
+.news-letter .flex {
+  margin-bottom: 32px;
+}
+
+.news-letter .hr {
+  width: 100%;
+  max-width: 450px;
+  height: 2px;
+  background: #c4c4c4;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+
+.news-letter h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.news-letter form {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid rgba(71, 74, 84, 0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.news-letter form input {
+  flex-grow: 1;
+}
+
+.news-letter form .icon {
+  width: 21px;
+  height: 21px;
+  background-image: url("../../../assets/vector/green-plane.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.news-letter form input::placeholder {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 165%;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1000px) {
+  .news-letter .heading {
+    font-size: 36px;
+    margin-bottom: 24px;
+    max-width: 570px;
+  }
+
+  .news-letter .hr-underline {
+    width: 50px;
+    margin-bottom: 32px;
+  }
+
+  .news-letter .btn--dark {
+    width: 219px;
+    height: 52px;
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  .news-letter .btn--toggle {
+    width: 204px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .news-letter .flex {
+    margin-bottom: 50px;
+  }
+
+  .news-letter .hr {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+
+  .news-letter h2 {
+    font-size: 36px;
+  }
+
+  .news-letter .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
-import Card from "../../../components/card/card";
-import Carousel from "../../../components/carousel/carousel";
+import Card from "../../../components/Card/Card.js";
+import Carousel from "../../../components/Carousel/Carousel.js";
 
 import "./SolutionSection.css";
 export default function SolutionSection() {

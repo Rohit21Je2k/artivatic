@@ -1,7 +1,7 @@
 import React from "react";
 
 import cardImg from "../../assets/png/cardIMG.png";
-import "./card.css";
+import "./Card.css";
 export default function Card(props) {
   const { type, tag, title, text, btnText } = props;
   return (

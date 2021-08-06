@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./carousel.css";
+import "./Carousel.css";
 export default function Carousel(props) {
   const { children, className, fade, navColor, dotNav } = props;
   const maxCount = children.length;
