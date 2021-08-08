@@ -15,6 +15,7 @@ import Testimonial from "../Components/Testimonial/Testimonial.js";
 import ResourcesSection from "../Components/ResourcesSection/ResourcesSection.js";
 import NewsLetterSection from "../Components/NewsLetterSection/NewsLetterSection.js";
 import Footer from "../Components/Footer/Footer.js";
+import Section8 from "../../components/Section8/ProductsSection.js";
 
 import Section6 from "../Components/Section6/Section6.js";
 
@@ -28,7 +29,8 @@ export default function Home() {
       <NativeSection />
       <Section6 />
       <NewProductSection />
-      <ProductsSection />
+      <Section8 />
+      {/* <ProductsSection /> */}
       <SolutionSection />
       <FeatureSection />
       <TrustSection />

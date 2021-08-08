@@ -68,6 +68,10 @@
   background-position: center center;
 }
 
+.card__hover {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .card {
     width: 270px;
