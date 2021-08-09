@@ -1,8 +1,6 @@
 import React from "react";
 
-import Card from "../../components/Card/Card";
-import Carousel from "../../components/Carousel/Carousel";
-import "./Ausis.css";
+import "./ProductSlide.css";
 export default function Ausis(props) {
   const { children, imgSrc, tag, title, text, relatedBtns } = props;
   return (

@@ -1,7 +1,9 @@
 import React from "react";
 
-import authImg from "../../../assets/png/testimonial/person.png";
-import greenGrid from "../../../assets/vector/green-grid.svg";
+import authImg from "../../assets/png/testimonial/person.png";
+import greenGrid from "../../assets/vector/green-grid.svg";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import Carousel from "../../components/Carousel/Carousel.js";
 import "./Testimonial.css";
 export default function Testimonial() {
   return (
@@ -17,35 +19,56 @@ export default function Testimonial() {
         <div className="container">
           <img src={greenGrid} alt="green-grid" className="green-grid" />
           <div className="content">
-            <div className="test-card">
-              <img src={authImg} alt="auth-img" />
-              <div className="auth-details">
-                <h5>Aklesh Singh</h5>
-                <p>
-                  Innovation Manager,
-                  <br /> ICICI Prudential Life Insurance
-                </p>
-              </div>
-              <p className="auth-text">
-                Artivatic’s product has shown promising results during the pilot
-                phase. We were largely successful in decision making and risk
-                profiling of new customers using their digital footprints and
-                technology to read and access health records. Continuously
-                working further with Artivatic to build new solutions to
-                innovate insurance services.
-              </p>
-            </div>
-          </div>
-          <div className="container-nav">
-            <button className="prev"></button>
-            <div className="dots">
-              <button className="dot-nav"></button>
-              <button className="dot-nav select"></button>
-              <button className="dot-nav"></button>
-              <button className="dot-nav"></button>
-              <button className="dot-nav"></button>
-            </div>
-            <button className="next"></button>
+            <Carousel fade="transparent" navColor="#22b966" dotNav={true}>
+              <TestimonialCard
+                imgSrc={authImg}
+                name="Aklesh Singh"
+                designation=" Innovation Manager"
+                address="ICICI Prudential Life Insurance"
+                text="Artivatic’s product has shown promising results during the pilot
+              phase. We were largely successful in decision making and risk
+              profiling of new customers using their digital footprints and
+              technology to read and access health records. Continuously
+              working further with Artivatic to build new solutions to
+              innovate insurance services."
+              />
+              <TestimonialCard
+                imgSrc={authImg}
+                name="Aklesh Singh"
+                designation=" Innovation Manager"
+                address="ICICI Prudential Life Insurance"
+                text="Artivatic’s product has shown promising results during the pilot
+              phase. We were largely successful in decision making and risk
+              profiling of new customers using their digital footprints and
+              technology to read and access health records. Continuously
+              working further with Artivatic to build new solutions to
+              innovate insurance services."
+              />
+              <TestimonialCard
+                imgSrc={authImg}
+                name="Aklesh Singh"
+                designation=" Innovation Manager"
+                address="ICICI Prudential Life Insurance"
+                text="Artivatic’s product has shown promising results during the pilot
+              phase. We were largely successful in decision making and risk
+              profiling of new customers using their digital footprints and
+              technology to read and access health records. Continuously
+              working further with Artivatic to build new solutions to
+              innovate insurance services."
+              />
+              <TestimonialCard
+                imgSrc={authImg}
+                name="Aklesh Singh"
+                designation=" Innovation Manager"
+                address="ICICI Prudential Life Insurance"
+                text="Artivatic’s product has shown promising results during the pilot
+              phase. We were largely successful in decision making and risk
+              profiling of new customers using their digital footprints and
+              technology to read and access health records. Continuously
+              working further with Artivatic to build new solutions to
+              innovate insurance services."
+              />
+            </Carousel>
           </div>
         </div>
       </div>

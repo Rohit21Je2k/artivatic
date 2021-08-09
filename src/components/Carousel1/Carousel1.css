@@ -1,0 +1,95 @@
+.carousel-1 {
+  position: relative;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.carousel-1__container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-1__container > * {
+  flex: none;
+  margin-right: 30px;
+}
+
+.carousel-1__control-prev,
+.carousel-1__control-next {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-1__control-prev::after,
+.carousel-1__control-next::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel-1__control-prev {
+  left: 0;
+  padding-left: 6px;
+  justify-content: flex-start;
+  background-image: linear-gradient(to left, transparent, var(--primary) 50%);
+}
+
+.carousel-1__control-prev::after {
+  background-image: url("../../assets/vector/white-arrow-left.svg");
+}
+
+.carousel-1__control-next {
+  right: 0;
+  padding-right: 6px;
+  justify-content: flex-end;
+  background-image: linear-gradient(to right, transparent, var(--primary) 50%);
+}
+
+.carousel-1__control-next::after {
+  background-image: url("../../assets/vector/white-arrow-right.svg");
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-1 {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-1 {
+    margin-left: calc(50% - 570px);
+  }
+
+  .carousel-1__control-prev,
+  .carousel-1__control-next {
+    width: 140px;
+  }
+
+  .carousel-1__control-next {
+    padding-right: 20px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      hsl(147, 69%, 43%, 0.8) 50%
+    );
+  }
+
+  .carousel-1__control-prev {
+    padding-left: 20px;
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      hsl(147, 69%, 43%, 0.8) 40%
+    );
+  }
+}

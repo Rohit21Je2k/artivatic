@@ -91,7 +91,7 @@
     padding: 100px 0;
   }
 
-  .product-slide .container {
+  .product-slide__details {
     display: flex;
     column-gap: 30px;
     align-items: center;

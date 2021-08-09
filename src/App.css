@@ -52,6 +52,8 @@ button {
   /* accent */
   --accent: hsl(230, 37%, 97%);
 
+  --transparent: transparent;
+
   /* gradient */
   --gradient-dark: linear-gradient(#00b59c, #9cffac);
   --gradient-light: linear-gradient(#c3ffe8, #effff4);

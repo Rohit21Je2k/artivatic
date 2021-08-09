@@ -90,6 +90,7 @@ export default function Carousel(props) {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="carousel__control-prev-svg"
           >
             <path
               d="M16.2426 6.34292L14.8284 4.92871L7.75732 11.9998L14.8284 19.0708L16.2426 17.6566L10.5857 11.9998L16.2426 6.34292Z"
@@ -113,6 +114,7 @@ export default function Carousel(props) {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="carousel__control-next-svg"
           >
             <path
               d="M7.75743 6.34292L9.17164 4.92871L16.2427 11.9998L9.17161 19.0708L7.75739 17.6566L13.4143 11.9998L7.75743 6.34292Z"
@@ -129,7 +131,7 @@ export default function Carousel(props) {
               <button
                 key={i}
                 className={`carousel__nav-btn ${i === 0 ? "select" : ""}`}
-                style={{ backgroundColor: `var(--${navColor})` }}
+                style={{ backgroundColor: navColor }}
               ></button>
             );
           })}

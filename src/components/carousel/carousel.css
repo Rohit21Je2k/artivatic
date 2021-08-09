@@ -25,13 +25,19 @@
 }
 
 .carousel__control-prev {
-  left: -30px;
+  left: 0;
   justify-content: flex-start;
 }
 
 .carousel__control-next {
-  right: -30px;
+  right: 0;
   justify-content: flex-end;
+}
+
+.carousel__control-prev-svg,
+.carousel__control-next-svg {
+  width: 24px;
+  height: 24px;
 }
 
 .carousel__nav {
@@ -63,6 +69,27 @@
 
   .carousel__control-prev,
   .carousel__control-next {
-    width: 120px;
+    width: 150px;
+  }
+
+  .carousel__control-prev-svg,
+  .carousel__control-next-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel__nav {
+    margin-top: 40px;
+    column-gap: 16px;
+  }
+
+  .carousel__nav-btn {
+    width: 8px;
+    height: 8px;
+  }
+
+  .carousel__nav-btn.select {
+    width: 12px;
+    height: 12px;
   }
 }

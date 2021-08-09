@@ -1,7 +1,6 @@
 import React from "react";
 
-import Card from "../../../components/card/card";
-import Carousel from "../../../components/carousel/carousel";
+import Carousel1 from "../Carousel1/Carousel1.js";
 import "./section6.css";
 export default function Section6() {
   return (
@@ -11,41 +10,9 @@ export default function Section6() {
           Artivatic is products designed for all user-driven scenarios.
         </h1>
 
-        <hr className="hr-underline"></hr>
-
-        <Carousel fade="primary" navColor="#fff" dotNav={true}>
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-          <Card
-            type="hover"
-            title="Role of Telehealth During COVID-19"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus neque at."
-          />
-        </Carousel>
+        <hr className="section-6__underline" />
       </div>
+      <Carousel1 id="section-6__carousel" />
     </section>
   );
 }
