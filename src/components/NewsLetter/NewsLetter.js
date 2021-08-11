@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./NewsLetterSection.css";
+import "./NewsLetter.css";
 export default function NewsLetterSection() {
   return (
     <section className="news-letter">

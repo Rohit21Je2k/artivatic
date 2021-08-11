@@ -1,9 +1,9 @@
 import React from "react";
 
-import img from "../../../assets/png/intro-section.png";
-import "./IntroSection.css";
+import img from "../../assets/png/intro-section.png";
+import "./Section1.css";
 
-export default function IntoSection() {
+export default function Section1() {
   return (
     <section className="intro-section">
       <div className="wrapper">

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Carousel1 from "../Carousel1/Carousel1.js";
-import "./section6.css";
+import "./Section6.css";
 export default function Section6() {
   return (
     <section className="section-6">

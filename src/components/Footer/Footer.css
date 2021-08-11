@@ -1,4 +1,4 @@
-#footer {
+footer {
   padding: 50px 0;
   background-color: var(--primary);
   color: white;
@@ -48,27 +48,27 @@
 }
 
 #footer .connect .FB-icon {
-  background-image: url("../../../assets/icons/Facebook_white.svg");
+  background-image: url("../../assets/icons/Facebook_white.svg");
 }
 
 #footer .connect .LD-icon {
-  background-image: url("../../../assets/icons/LinkedIN_white.svg");
+  background-image: url("../../assets/icons/LinkedIN_white.svg");
 }
 
 #footer .connect .YT-icon {
-  background-image: url("../../../assets/icons/Youtube_white.svg");
+  background-image: url("../../assets/icons/Youtube_white.svg");
 }
 
 #footer .connect .IG-icon {
-  background-image: url("../../../assets/icons/Instagram_white.svg");
+  background-image: url("../../assets/icons/Instagram_white.svg");
 }
 
 #footer .connect .TW-icon {
-  background-image: url("../../../assets/icons/Twitter_white.svg");
+  background-image: url("../../assets/icons/Twitter_white.svg");
 }
 
 #footer .connect .VC-icon {
-  background-image: url("../../../assets/icons/victory_white.svg");
+  background-image: url("../../assets/icons/victory_white.svg");
 }
 
 #footer .about .imgs {

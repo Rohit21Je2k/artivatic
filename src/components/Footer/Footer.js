@@ -1,13 +1,13 @@
 import React from "react";
 
-import logo from "../../../assets/logo-light.svg";
-import ssl from "../../../assets/png/SSL_certificate 1.png";
-import iso from "../../../assets/png/iso_27001-150x150 1.png";
-import hippa from "../../../assets/png/hipaa-artivatic 1.png";
+import logo from "../../assets/logo-light.svg";
+import ssl from "../../assets/png/SSL_certificate 1.png";
+import iso from "../../assets/png/iso_27001-150x150 1.png";
+import hippa from "../../assets/png/hipaa-artivatic 1.png";
 import "./Footer.css";
 export default function Footer() {
   return (
-    <section id="footer">
+    <footer id="footer">
       <div className="wrapper">
         <div className="about">
           <div className="text">
@@ -92,6 +92,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

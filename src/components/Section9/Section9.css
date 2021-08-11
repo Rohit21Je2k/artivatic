@@ -1,0 +1,43 @@
+.section-9 {
+  padding: 50px 0;
+  background-color: var(--primary);
+  overflow: hidden;
+}
+
+.section-9__heading {
+  max-width: 300px;
+  margin: 0 auto 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--text-light);
+}
+
+.section-9__underline {
+  width: 50px;
+  height: 2px;
+  margin: 0 auto 28px;
+  background-color: white;
+}
+
+.section-9__carousel-container {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-9 {
+    padding: 100px 0;
+  }
+
+  .section-9__heading {
+    margin-bottom: 24px;
+    max-width: 770px;
+    font-size: 40px;
+  }
+
+  .section-9__underline {
+    margin-bottom: 64px;
+  }
+}

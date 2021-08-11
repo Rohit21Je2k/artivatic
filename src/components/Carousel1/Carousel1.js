@@ -27,16 +27,14 @@ export default function Carousel1(props) {
 
     if (scroll <= 0) {
       setControlState(0);
-    } else if (
-      container.lastChild.getBoundingClientRect().right -
-        window.innerWidth -
-        30 <
-      10
-    ) {
+    } else if (container.scrollWidth - scroll <= container.offsetWidth) {
       setControlState(2);
     } else {
       setControlState(1);
     }
+
+    console.log(container.offsetWidth);
+    console.log(container.scrollWidth - scroll);
   }
   return (
     <div className="carousel-1">

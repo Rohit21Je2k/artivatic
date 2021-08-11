@@ -19,7 +19,12 @@ export default function Testimonial() {
         <div className="container">
           <img src={greenGrid} alt="green-grid" className="green-grid" />
           <div className="content">
-            <Carousel fade="transparent" navColor="#22b966" dotNav={true}>
+            <Carousel
+              id="testimonial__carousel"
+              fade="transparent"
+              navColor="#22b966"
+              dotNav={true}
+            >
               <TestimonialCard
                 imgSrc={authImg}
                 name="Aklesh Singh"

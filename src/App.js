@@ -1,7 +1,9 @@
 import React from "react";
 
-import Header from "./Shared/Components/Navigation/Header.js";
-import Home from "./HomePage/Page/Home.js";
+import Header from "./components/Header/Header.js";
+import Footer from "./components/Footer/Footer.js";
+import Home from "./containers/Home/Home.js";
+
 import "./App.css";
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <Footer />
     </div>
   );
 }
