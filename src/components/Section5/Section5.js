@@ -5,7 +5,7 @@ import nativeImgDesk from "../../assets/png/native-section-desk.png";
 import "./Section5.css";
 export default function Section5() {
   return (
-    <section className="native-section">
+    <section className="section-5 native-section">
       <div className="wrapper">
         <div className="native-section__content">
           <h1>

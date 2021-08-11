@@ -5,7 +5,7 @@ import "./Section1.css";
 
 export default function Section1() {
   return (
-    <section className="intro-section">
+    <section className="section-1 intro-section">
       <div className="wrapper">
         {/* heading */}
         <div className="grid-1">

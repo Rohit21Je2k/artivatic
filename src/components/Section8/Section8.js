@@ -15,7 +15,7 @@ export default function Section8() {
     setCurrentSlide(slideName);
   }
   return (
-    <section className="product-section">
+    <section className="section-8 product-section">
       <div className="wrapper">
         <h1 className="heading">Artivatic Products</h1>
         <button className="demo-btn btn btn--sm btn--dark">Get a demo</button>

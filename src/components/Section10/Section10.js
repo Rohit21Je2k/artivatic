@@ -4,7 +4,7 @@ import greenCircle from "../../assets/vector/green-circle.svg";
 import "./Section10.css";
 export default function Section10() {
   return (
-    <section className="feature-section">
+    <section className="section-10 feature-section">
       <div className="wrapper">
         <h1 className="heading">
           Build <span style={{ color: "var(--primary)" }}>Next Future </span>of

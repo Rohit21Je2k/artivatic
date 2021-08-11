@@ -6,7 +6,7 @@ import "./Section2.css";
 
 export default function Section2() {
   return (
-    <section className="about-section">
+    <section className="section-2 about-section">
       <div className="wrapper">
         <h1 className="about-section__heading">
           You are not just

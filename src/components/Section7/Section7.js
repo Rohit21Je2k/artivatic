@@ -2,9 +2,9 @@ import React from "react";
 
 import blackDot from "../../assets/vector/blackDot.svg";
 import "./Section7.css";
-export default function NewProductSection() {
+export default function Section7() {
   return (
-    <section className="new-product-section">
+    <section className="section-7 new-product-section">
       <div className="wrapper">
         <div className="dot-grid-1"></div>
         <div className="dot-grid-2"></div>

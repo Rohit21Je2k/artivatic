@@ -7,9 +7,9 @@ import award4 from "../../assets/png/awards/award-4.png";
 import award5 from "../../assets/png/awards/award-5.png";
 
 import "./Section3.css";
-export default function AwardSection() {
+export default function Section3() {
   return (
-    <section className="award-section">
+    <section className="section-3 award-section">
       <div className="wrapper">
         <h1 className="award-section__heading">Awards & Recognition</h1>
         <hr className="underline" />
