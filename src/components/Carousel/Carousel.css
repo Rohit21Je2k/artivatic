@@ -1,0 +1,115 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "slide slide slide" "prev nav next";
+  row-gap: 20px;
+}
+
+.carousel__container {
+  grid-area: slide;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel__container > * {
+  flex: none;
+}
+
+.carousel__control-prev,
+.carousel__control-next {
+  display: flex;
+  align-items: center;
+}
+
+.carousel__control-prev {
+  grid-area: prev;
+  left: 0;
+  justify-content: flex-start;
+}
+
+.carousel__control-next {
+  grid-area: next;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.carousel__control-prev-svg,
+.carousel__control-next-svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.carousel__nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10.67px;
+}
+
+.carousel__nav-btn {
+  width: 5.33px;
+  height: 5.33px;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.carousel__nav-btn.select {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel {
+    grid-template-columns: auto;
+    grid-template-areas: "prev slide next" "nav nav nav";
+  }
+
+  .carousel__container {
+    grid-area: slide;
+  }
+
+  .carousel__control-prev {
+    grid-area: prev;
+  }
+
+  .carousel__control-next {
+    grid-area: next;
+  }
+
+  .carousel__control-prev,
+  .carousel__control-next {
+    width: 50px;
+  }
+
+  .carousel__control-prev-svg,
+  .carousel__control-next-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel__nav {
+    grid-area: nav;
+    column-gap: 16px;
+  }
+
+  .carousel__nav-btn {
+    width: 8px;
+    height: 8px;
+  }
+
+  .carousel__nav-btn.select {
+    width: 12px;
+    height: 12px;
+  }
+}
