@@ -40,6 +40,11 @@
   background-color: transparent;
 }
 
+.news-letter .btn--toggle:hover {
+  background-color: white;
+  color: var(--text-dark);
+}
+
 .news-letter .flex {
   margin-bottom: 32px;
 }

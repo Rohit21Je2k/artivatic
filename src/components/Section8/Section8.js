@@ -10,6 +10,10 @@ import "./Section8.css";
 export default function Section8() {
   const [currentSlide, setCurrentSlide] = useState("ausis");
   function handleClick(e) {
+    document
+      .querySelector(".product-section .btn-nav.select")
+      .classList.remove("select");
+    e.target.classList.add("select");
     const slideName = e.currentTarget.getAttribute("data-name");
     console.log(slideName);
     setCurrentSlide(slideName);
@@ -21,35 +25,35 @@ export default function Section8() {
         <button className="demo-btn btn btn--sm btn--dark">Get a demo</button>
         <div className="product-section__nav">
           <button
-            className="btn-nav btn btn--sm btn--toggle select"
+            className="btn-nav btn btn--sm select"
             data-name="ausis"
             onClick={handleClick}
           >
             AUSIS
           </button>
           <button
-            className="btn-nav btn btn--sm btn--toggle"
+            className="btn-nav btn btn--sm"
             data-name="aspire"
             onClick={handleClick}
           >
             ASPIRE
           </button>
           <button
-            className="btn-nav btn btn--sm btn--toggle"
+            className="btn-nav btn btn--sm"
             data-name="infrd"
             onClick={handleClick}
           >
             INFRD
           </button>
           <button
-            className="btn-nav btn btn--sm btn--toggle"
+            className="btn-nav btn btn--sm"
             data-name="ausis"
             onClick={handleClick}
           >
             MIO
           </button>
           <button
-            className="btn-nav btn btn--sm btn--toggle"
+            className="btn-nav btn btn--sm"
             data-name="ausis"
             onClick={handleClick}
           >
