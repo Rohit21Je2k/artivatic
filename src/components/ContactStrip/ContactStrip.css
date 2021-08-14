@@ -1,0 +1,104 @@
+.contact-strip {
+  padding: 7px 0;
+  display: none;
+}
+
+/* wrapper */
+.contact-strip .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* search bar */
+.contact-strip__search-bar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-strip__search-bar::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-image: url("../../assets/vector/search.svg");
+  background-position: center center;
+}
+
+.contact-strip__search-bar input {
+  width: 300px;
+  padding: 2px 7px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.contact-strip__search-bar input:focus {
+  border-color: var(--gray-400);
+}
+
+.contact-strip__search-bar input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-500);
+}
+
+/* details */
+.contact-strip__details {
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-500);
+}
+
+.contact-strip__details .number,
+.contact-strip__details .email {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.contact-strip__details .number::before,
+.contact-strip__details .email::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-strip__details .number::before {
+  background-image: url("../../assets/vector/phone.svg");
+}
+
+.contact-strip__details .email::before {
+  background-image: url("../../assets/vector/mail1.svg");
+}
+
+.contact-strip__details .contact,
+.contact-strip__details .support {
+  margin-right: 24px;
+  background: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-500);
+}
+
+.contact-strip__details .language {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-500);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-strip {
+    display: block;
+  }
+}

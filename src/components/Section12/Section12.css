@@ -89,6 +89,7 @@
 }
 
 .resource-section__view-more-btn {
+  display: none !important;
   margin-top: 30px;
 }
 
@@ -177,6 +178,7 @@
   }
 
   .resource-section__view-more-btn {
+    display: inline-flex !important;
     margin-top: 40px;
   }
 }
