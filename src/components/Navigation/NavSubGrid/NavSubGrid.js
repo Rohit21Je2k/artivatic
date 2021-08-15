@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import NavSubGridCard from "../NavSubGridCard/NavSubGridCard";
 import "./NavSubGrid.css";
 export default function NavSubGrid(props) {
-  let { navBannerRef, gridCardRef } = props;
+  let { navBannerRef, gridCardRef, subGrid } = props;
   const [containerStyles, setContainerStyles] = useState();
   const [height, setHeight] = useState(0);
 
@@ -37,10 +37,10 @@ export default function NavSubGrid(props) {
         }
       >
         <div className="content">
-          <NavSubGridCard />
-          <NavSubGridCard />
-          <NavSubGridCard />
-          <NavSubGridCard />
+          {subGrid &&
+            subGrid.map((item) => {
+              return <NavSubGridCard title={item.title} list={item.list} />;
+            })}
         </div>
       </div>
     </div>

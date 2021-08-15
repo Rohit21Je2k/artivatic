@@ -1,13 +1,16 @@
 import React from "react";
 
 import "./NavSubGridCard.css";
-export default function NavSubGridCard() {
+export default function NavSubGridCard(props) {
+  const { title, list } = props;
   return (
     <div className="nav__sub-grid__card">
-      <h4 className="nav__sub-grid__card__h4">Life Underwriting</h4>
+      <h4 className="nav__sub-grid__card__h4">{title}</h4>
       <ul className="nav__sub-grid__card__ul">
-        <li className="nav__sub-grid__card__li">Individual</li>
-        <li className="nav__sub-grid__card__li">Group</li>
+        {list &&
+          list.map((item) => {
+            return <li className="nav__sub-grid__card__li">{item}</li>;
+          })}
       </ul>
     </div>
   );

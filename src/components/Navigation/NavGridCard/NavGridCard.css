@@ -1,6 +1,7 @@
 .navBanner__grid__card {
   position: relative;
   cursor: pointer;
+  border-radius: 8px 8px 0 0;
 }
 
 .bg-vl-blue {
@@ -10,6 +11,7 @@
 .navBanner__grid__card .container {
   display: flex;
   padding: 12px 20px;
+  border-radius: 8px 8px 0 0;
 }
 
 .navBanner__grid__card img {
