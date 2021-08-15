@@ -1,6 +1,6 @@
 import React from "react";
 
-import DeskNav from "../DeskNav/DeskNav.js";
+import NavDesk from "../NavDesk/NavDesk.js";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
         </button>
         <div className="desk-nav-container">
           {/* Nav Menu Desktop*/}
-          <DeskNav />
+          <NavDesk />
           <div className="nav__desktop">
             {/* Nav CTA */}
             <button className="nav__cta btn btn--bg btn--light">

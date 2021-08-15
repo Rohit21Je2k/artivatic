@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 import NavBanner from "../NavBanner/NavBanner";
-import "./DeskNav.css";
+import "./NavDesk.css";
 export default function DeskNav() {
   const [navNumber, setNavNumber] = useState(0);
-  function handleClick(e) {
+  function handleMouseOver(e) {
     const navNo = Number(e.currentTarget.getAttribute("data-number"));
-    console.log(navNumber);
+
     setNavNumber((prevNumber) => {
       if (navNo === prevNumber) {
         return 0;
@@ -18,12 +18,16 @@ export default function DeskNav() {
     <div className="nav__menu">
       <button
         className="nav__link selected"
-        onClick={handleClick}
+        onMouseOver={handleMouseOver}
         data-number="0"
       >
         Home
       </button>
-      <button className="nav__link" onClick={handleClick} data-number="1">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="1"
+      >
         Products
       </button>
       {navNumber === 1 ? (
@@ -56,7 +60,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="2">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="2"
+      >
         Cloud API
       </button>
       {navNumber === 2 ? (
@@ -97,7 +105,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="3">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="3"
+      >
         Solutions
       </button>
       {navNumber === 3 ? (
@@ -134,7 +146,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="4">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="4"
+      >
         Resource
       </button>
       {navNumber === 4 ? (
@@ -179,7 +195,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="5">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="5"
+      >
         Covid 19 tools
       </button>
       {navNumber === 5 ? (
@@ -224,7 +244,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="6">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="6"
+      >
         Growth
       </button>
       {navNumber === 6 ? (
@@ -253,7 +277,11 @@ export default function DeskNav() {
       ) : (
         ""
       )}
-      <button className="nav__link" onClick={handleClick} data-number="7">
+      <button
+        className="nav__link"
+        onMouseOver={handleMouseOver}
+        data-number="7"
+      >
         Company
       </button>
       {navNumber === 7 ? (

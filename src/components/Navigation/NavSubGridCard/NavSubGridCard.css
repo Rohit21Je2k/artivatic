@@ -1,0 +1,32 @@
+.nav__sub-grid__card__h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #474a54;
+}
+
+.nav__sub-grid__card__ul {
+  list-style: none;
+}
+
+.nav__sub-grid__card__li {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #050302;
+  margin-bottom: 20px;
+}
+
+.nav__sub-grid__card__li::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 22px;
+  background-image: url("../../../assets/vector/green-chevron-right.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
