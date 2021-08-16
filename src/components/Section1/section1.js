@@ -5,12 +5,12 @@ import "./Section1.css";
 
 export default function Section1() {
   return (
-    <section className="section-1 intro-section">
+    <section className="section-1">
       <div className="wrapper">
         {/* heading */}
         <div className="grid-1">
           {/* <img className="bg" src={bg} alt="into-section-bg" /> */}
-          <h1 className="intro-section__heading">
+          <h1 className="section-1__heading">
             Positively <br />
             <span style={{ color: "black" }}>Enabling </span>
             Affodrable Insurance
@@ -19,10 +19,10 @@ export default function Section1() {
         </div>
         {/* Image */}
         <div className="grid-2">
-          <img src={img} alt="person-img" className="intro-section__img" />
+          <img src={img} alt="person-img" className="section-1__img" />
         </div>
         {/* Content */}
-        <div className="intro-section__content grid-3">
+        <div className="section-1__content grid-3">
           <h2>Join us in revolutionizing the Insurance ecosystem</h2>
           <p>
             Artivatic’s AI- Native SaaS Solutions for insurance & health

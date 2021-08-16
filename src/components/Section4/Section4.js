@@ -4,7 +4,7 @@ import insuranceCloudImg from "../../assets/png/insurance cloud-mob.png";
 import "./Section4.css";
 export default function Section4() {
   return (
-    <section className="section-4 insurance-cloud-section">
+    <section className="section-4">
       <div className="wrapper">
         <h1 className="heading-1">The Insurance Cloud</h1>
         <hr className="hr-underline"></hr>

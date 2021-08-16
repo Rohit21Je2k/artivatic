@@ -1,14 +1,13 @@
-.about-section {
+.section-2 {
   padding: 50px 0;
 }
 
-.about-section .wrapper {
-  max-width: 380px;
-
+.section-2 .wrapper {
+  max-width: 362px;
   margin: 0 auto;
 }
 
-.about-section__heading {
+.section-2__heading {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 30px;
@@ -16,75 +15,86 @@
   color: #050302;
 }
 
-.about-section .img-container {
+.section-2 .img-container {
   position: relative;
   overflow: hidden;
 }
 
-.about-section__img {
+.section-2__img {
   width: 100%;
 }
 
-.about-section__img.desk {
+.section-2__img.mob {
+  max-height: 260px;
+}
+
+.section-2__img.desk {
   display: none;
 }
 
-.about-section__img__fade {
+.section-2 .fade {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
   background-image: linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    rgba(255, 255, 255, 0) 20% 80%,
-    rgb(255, 255, 255) 100%
+    90deg,
+    #fff,
+    hsla(0, 0%, 100%, 0) 20% 80%,
+    #fff
   );
 }
 
-@media screen and (min-width: 700px) {
-  .about-section .wrapper {
-    max-width: 720px;
+@media screen and (min-width: 576px) {
+  .section-2 .wrapper {
+    max-width: 765px;
     max-height: 558px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     column-gap: 30px;
   }
 
-  .about-section__heading,
-  .about-section .img-container {
+  .section-2__heading,
+  .section-2 .img-container {
     flex: 1;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .about-section .wrapper {
-    max-width: 1260px;
-  }
-
-  .about-section__heading {
-    font-size: 50px;
-    line-height: 130%;
-  }
-
-  .about-section__img.mob {
+  .section-2__img.mob {
     display: none;
   }
 
-  .about-section__img.desk {
+  .section-2__img.desk {
     display: block;
   }
 
-  .about-section .img-container {
-    height: 558px;
+  .section-2 .fade {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-2 .wrapper {
+    max-width: 1260px;
   }
 
-  .about-section__img__fade {
-    background-image: linear-gradient(
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0) 20% 80%,
-      rgb(255, 255, 255) 100%
-    );
+  .section-2__heading {
+    max-width: 500px;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+
+  .section-2__img.mob {
+    display: none;
+  }
+
+  .section-2__img.desk {
+    display: block;
+  }
+
+  .section-2 .img-container {
+    max-width: 550px;
   }
 }

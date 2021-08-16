@@ -1,13 +1,13 @@
-.award-section {
+.section-3 {
   padding: 40px 0 50px;
   background-color: var(--vl-blue);
 }
 
-.award-section .wrapper {
+.section-3 .wrapper {
   margin: 0 auto;
 }
 
-.award-section__heading {
+.section-3__heading {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
@@ -16,7 +16,7 @@
   color: var(--text-dark);
 }
 
-.award-section .underline {
+.section-3 .underline {
   margin: 0 auto 8px;
   width: 30px;
   height: 2px;
@@ -25,33 +25,32 @@
   border-radius: 5px;
 }
 
-.award-section .img-container {
+.section-3 .img-container {
   text-align: center;
 }
 
-.award-section__img {
+.section-3__img {
   width: 71.5px;
   height: 55px;
   margin: 24px 10px 0;
 }
 
-@media screen and (min-width: 1260px) {
-  .award-section {
-    padding-top: 60px;
-    padding-bottom: 80px;
+@media screen and (min-width: 820px) {
+  .section-3 {
+    padding: 100px 0;
   }
 
-  .award-section__heading {
+  .section-3__heading {
     margin-bottom: 24px;
     font-size: 36px;
   }
 
-  .award-section .underline {
+  .section-3 .underline {
     width: 56px;
     margin-bottom: 40px;
   }
 
-  .award-section .img-container {
+  .section-3 .img-container {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +58,7 @@
     justify-content: space-between;
   }
 
-  .award-section__img {
+  .section-3__img {
     margin-top: 0;
     width: 130px;
     height: 100px;
