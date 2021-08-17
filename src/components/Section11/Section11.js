@@ -5,9 +5,9 @@ import nativeImgDesk from "../../assets/png/native-section-desk.png";
 import "./Section11.css";
 export default function Section11() {
   return (
-    <section className="section-11 trust-section native-section">
+    <section className="section-11">
       <div className="wrapper">
-        <div className="native-section__content">
+        <div className="section-11__content">
           <h1>
             Our customers are{" "}
             <span style={{ color: "var(--primary" }}>superheroes </span> – we
@@ -24,13 +24,13 @@ export default function Section11() {
         <div className="img-container">
           <img
             src={nativeImgMob}
-            alt="native-img"
-            className="native-section__img mob"
+            alt="section-11-img"
+            className="section-11__img mob"
           />
           <img
             src={nativeImgDesk}
-            alt="native-img"
-            className="native-section__img desk"
+            alt="section-11-img"
+            className="section-11__img desk"
           />
           <div className="fade"></div>
         </div>

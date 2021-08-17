@@ -5,9 +5,9 @@ import nativeImgDesk from "../../assets/png/native-section-desk.png";
 import "./Section5.css";
 export default function Section5() {
   return (
-    <section className="section-5 native-section">
+    <section className="section-5">
       <div className="wrapper">
-        <div className="native-section__content">
+        <div className="section-5__content">
           <h1>
             Over <span style={{ color: "var(--primary" }}>20+ </span>native
             integrations out of the box
@@ -27,13 +27,13 @@ export default function Section5() {
         <div className="img-container">
           <img
             src={nativeImgMob}
-            alt="native-img"
-            className="native-section__img mob"
+            alt="section-5-img"
+            className="section-5__img mob"
           />
           <img
             src={nativeImgDesk}
-            alt="native-img"
-            className="native-section__img desk"
+            alt="section-5-img"
+            className="section-5__img desk"
           />
           <div className="fade"></div>
         </div>

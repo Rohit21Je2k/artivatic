@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import ProductSlide from "../ProductSlide/ProductSlide.js";
 import CoverImg from "../../assets/png/ausis-cover-img.png";
 import Card from "../Card/Card.js";
-import Carousel from "../Carousel/Carousel.js";
 
 import "./Section8.css";
 
@@ -11,19 +10,18 @@ export default function Section8() {
   const [currentSlide, setCurrentSlide] = useState("ausis");
   function handleClick(e) {
     document
-      .querySelector(".product-section .btn-nav.select")
+      .querySelector(".section-8 .btn-nav.select")
       .classList.remove("select");
     e.target.classList.add("select");
     const slideName = e.currentTarget.getAttribute("data-name");
-    console.log(slideName);
     setCurrentSlide(slideName);
   }
   return (
-    <section className="section-8 product-section">
+    <section className="section-8 ">
       <div className="wrapper">
         <h1 className="heading">Artivatic Products</h1>
         <button className="demo-btn btn btn--sm btn--dark">Get a demo</button>
-        <div className="product-section__nav">
+        <div className="section-8__nav">
           <button
             className="btn-nav btn btn--sm select"
             data-name="ausis"
@@ -47,7 +45,7 @@ export default function Section8() {
           </button>
           <button
             className="btn-nav btn btn--sm"
-            data-name="ausis"
+            data-name="mio"
             onClick={handleClick}
           >
             MIO
@@ -63,6 +61,7 @@ export default function Section8() {
       </div>
       {currentSlide === "ausis" && (
         <ProductSlide
+          id="ausis__product-slide"
           imgSrc={CoverImg}
           tag="AUSIS for Life & Health Insurance"
           title=" AUSIS – Full-stack AI based Behavioural & Personalized Smart
@@ -79,52 +78,42 @@ export default function Section8() {
             "EME Underwriting",
           ]}
         >
-          <Carousel
-            id="ausis__carousel"
-            className="product-slide__carousel"
-            containerClassName="product-slide__carousel__container"
-            prevControlClassName="product-slide__carousel__prev-control"
-            nextControlClassName="product-slide__carousel__next-control"
-            fade="primary-vl"
-            navColor="#22b966"
-            dotNav={false}
-          >
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-          </Carousel>
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
         </ProductSlide>
       )}
 
       {currentSlide === "aspire" && (
         <ProductSlide
+          id="aspire__product-slide"
           imgSrc={CoverImg}
           tag="Aspire for Life & Health Insurance"
           title=" ASPIRE – Full-stack AI based Behavioural & Personalized Smart
@@ -141,52 +130,42 @@ export default function Section8() {
             "EME Underwriting",
           ]}
         >
-          <Carousel
-            id="aspire__carousel"
-            className="product-slide__carousel"
-            containerClassName="product-slide__carousel__container"
-            prevControlClassName="product-slide__carousel__prev-control"
-            nextControlClassName="product-slide__carousel__next-control"
-            fade="primary-vl"
-            navColor="#22b966"
-            dotNav={false}
-          >
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-          </Carousel>
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
         </ProductSlide>
       )}
 
       {currentSlide === "infrd" && (
         <ProductSlide
+          id="infrd__product-slide"
           imgSrc={CoverImg}
           tag="API Economy is future"
           title="INFRD – Modular API Platform"
@@ -201,55 +180,45 @@ export default function Section8() {
             "EME Underwriting",
           ]}
         >
-          <Carousel
-            id="infrd__carousel"
-            className="product-slide__carousel"
-            containerClassName="product-slide__carousel__container"
-            prevControlClassName="product-slide__carousel__prev-control"
-            nextControlClassName="product-slide__carousel__next-control"
-            fade="primary-vl"
-            navColor="#22b966"
-            dotNav={false}
-          >
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-          </Carousel>
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
         </ProductSlide>
       )}
 
       {currentSlide === "mio" && (
         <ProductSlide
+          id="mio__product-slide"
           imgSrc={CoverImg}
-          tag="AUSIS for Life & Health Insurance"
-          title=" AUSIS – Full-stack AI based Behavioural & Personalized Smart
+          tag="MIO for Life & Health Insurance"
+          title="MIO – Full-stack AI based Behavioural & Personalized Smart
               Underwriting"
           text=" Artivatic’s AI- Native SaaS Solutions for insurance & health
                   services as modular building blocks powered by best-in-class API
@@ -263,38 +232,36 @@ export default function Section8() {
             "EME Underwriting",
           ]}
         >
-          <Carousel fade="primary-vl" navColor="#22b966" dotNav={false}>
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-            <Card
-              tag="Case study"
-              title="Role of Telehealth During COVID-19"
-              ancLink="/"
-              btnText="View all case studies"
-            />
-          </Carousel>
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
+          <Card
+            tag="Case study"
+            title="Role of Telehealth During COVID-19"
+            ancLink="/"
+            btnText="View all case studies"
+          />
         </ProductSlide>
       )}
     </section>

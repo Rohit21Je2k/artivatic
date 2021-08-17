@@ -1,0 +1,158 @@
+.section-11 {
+  padding: 50px 0;
+  background-color: var(--vl-blue);
+}
+
+.section-11 .wrapper {
+  max-width: 360px;
+}
+
+.section-11__content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  margin-bottom: 32px;
+}
+
+.section-11__content h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 125%;
+  margin-bottom: 8px;
+}
+
+.section-11__content .hr-underline {
+  margin-left: 0;
+  margin-bottom: 16px;
+  background-color: var(--primary);
+  opacity: 1;
+}
+
+.section-11__content p {
+  margin-bottom: 5px;
+}
+
+.section-11__content li {
+  margin-bottom: 5px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-11__content li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  background-image: url("../../assets/vector/green-tick.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-11 .img-container {
+  position: relative;
+  height: 72px;
+  overflow: hidden;
+}
+
+.section-11 .img-container .fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--vl-blue),
+    transparent 20% 80%,
+    var(--vl-blue)
+  );
+}
+
+.section-11__img.mob {
+  height: 100%;
+  width: auto;
+  transform: translate(-10%, 0);
+}
+
+.section-11__img.desk {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .section-11 {
+    padding: 30px 0;
+  }
+
+  .section-11 .wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    column-gap: 32px;
+  }
+
+  .section-11__content,
+  .section-11 .img-container {
+    flex: 1;
+  }
+
+  .section-11__content {
+    margin-bottom: 0;
+  }
+
+  .section-11 .img-container {
+    height: auto;
+  }
+
+  .section-11__img.mob {
+    display: none;
+  }
+
+  .section-11__img.desk {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 495px;
+  }
+
+  .section-11 .img-container .fade {
+    background-image: linear-gradient(
+      var(--vl-blue),
+      transparent 20% 80%,
+      var(--vl-blue)
+    );
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-11 .wrapper {
+    max-width: 1260px;
+  }
+
+  .section-11__content {
+    font-size: 18px;
+    line-height: 167%;
+    padding: 100px 0;
+  }
+
+  .section-11__content h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .section-11__content p {
+    margin-bottom: 16px;
+  }
+
+  .section-11__content li {
+    margin-bottom: 8px;
+  }
+
+  .section-11__content li::before {
+    width: 20px;
+    height: 20px;
+  }
+}
