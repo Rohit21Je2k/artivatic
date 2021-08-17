@@ -61,7 +61,7 @@
   background-size: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .testimonial-card {
     column-gap: 30px;
     row-gap: 32px;

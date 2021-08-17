@@ -97,7 +97,7 @@
   color: rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .news-letter .heading {
     font-size: 36px;
     margin-bottom: 24px;
@@ -131,13 +131,23 @@
     max-width: 100%;
   }
 
-  .news-letter h2 {
-    font-size: 36px;
-  }
-
   .news-letter .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .news-letter h2 {
+    flex: none;
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .news-letter h2 {
+    font-size: 36px;
   }
 }
