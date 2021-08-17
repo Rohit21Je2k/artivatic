@@ -38,8 +38,14 @@ export default function NavSubGrid(props) {
       >
         <div className="content">
           {subGrid &&
-            subGrid.map((item) => {
-              return <NavSubGridCard title={item.title} list={item.list} />;
+            subGrid.map((item, index) => {
+              return (
+                <NavSubGridCard
+                  key={index}
+                  title={item.title}
+                  list={item.list}
+                />
+              );
             })}
         </div>
       </div>

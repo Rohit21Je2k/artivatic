@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 
 import NavGridCard from "../NavGridCard/NavGridCard";
 
@@ -11,11 +11,11 @@ export default function NavBanner(props) {
 
   const [navBannerRef, setNavBannerRef] = useState();
 
-  const handleNavBannerRef = useCallback((node) => {
+  const handleNavBannerRef = (node) => {
     if (node) {
       setNavBannerRef(node);
     }
-  }, []);
+  };
 
   return (
     <div className="navBanner" ref={handleNavBannerRef}>

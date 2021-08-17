@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 
 import NavSubGrid from "../NavSubGrid/NavSubGrid";
 import greenDot from "../../../assets/vector/green-circle.svg";
@@ -17,11 +17,11 @@ export default function NavGridCard(props) {
   const [showSubGrid, setShowSubgrid] = useState(false);
   const [gridCardRef, setGridCardRef] = useState();
 
-  const handleGridCardRef = useCallback((node) => {
+  const handleGridCardRef = (node) => {
     if (node) {
       setGridCardRef(node);
     }
-  }, []);
+  };
 
   const showSubGridHandler = (e) => {
     // e.currentTarget.classList.add("bg-vl-blue");
