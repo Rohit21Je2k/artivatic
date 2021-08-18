@@ -1,8 +1,8 @@
 .navBanner {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1050px;
   position: absolute;
-  top: 110px;
+  top: 90px;
   left: 50%;
   z-index: 10;
   transform: translate(-50%, 0);
@@ -19,7 +19,7 @@
 .navBanner__row-1,
 .navBanner__row-2 {
   width: 100%;
-  padding: 40px 70px;
+  padding: 20px 40px;
 }
 
 .navBanner__row-1 {
@@ -46,5 +46,5 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   column-gap: 20px;
-  row-gap: 43px;
+  row-gap: 20px;
 }
